@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     let title: String
+    @Binding var items: [Item]
     
     var body: some View {
         VStack(spacing: 0) {
@@ -27,7 +28,7 @@ struct ListView: View {
                 .padding(.horizontal)
                 .padding(.top)
             
-            List {
+            List($items) { $item in
                 Text("Item 1")
                 
                 Text("Item 2")
@@ -41,5 +42,9 @@ struct ListView: View {
 }
 
 #Preview {
-    ListView(title: "To Do")
+    ListView(title: "To Do", items: .constant([
+        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now),
+        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5),
+        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10)
+    ]))
 }
