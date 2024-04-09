@@ -14,6 +14,7 @@
 		504149EB2BC3611400E500E7 /* PleaseDoTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149EA2BC3611400E500E7 /* PleaseDoTutorialTests.swift */; };
 		504149F52BC3611400E500E7 /* PleaseDoTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149F42BC3611400E500E7 /* PleaseDoTutorialUITests.swift */; };
 		504149F72BC3611400E500E7 /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149F62BC3611400E500E7 /* PleaseDoTutorialUITestsLaunchTests.swift */; };
+		50414A082BC4DF4F00E500E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50414A072BC4DF4F00E500E7 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		504149F02BC3611400E500E7 /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		504149F42BC3611400E500E7 /* PleaseDoTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITests.swift; sourceTree = "<group>"; };
 		504149F62BC3611400E500E7 /* PleaseDoTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50414A072BC4DF4F00E500E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		50414A042BC4AD1700E500E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50414A072BC4DF4F00E500E7 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50414A082BC4DF4F00E500E7 /* HomeView.swift in Sources */,
 				504149DC2BC3610F00E500E7 /* ContentView.swift in Sources */,
 				504149DA2BC3610F00E500E7 /* PleaseDoTutorialApp.swift in Sources */,
 			);
