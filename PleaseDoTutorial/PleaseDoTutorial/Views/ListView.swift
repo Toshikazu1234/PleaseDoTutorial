@@ -29,7 +29,9 @@ struct ListView: View {
                 .padding(.top)
             
             List($items) { $item in
-                Text(item.title)
+                NavigationLink(destination: Text("Item details view")) {
+                    ListItemView(item: item, height: 100)
+                }
             }
             .scrollContentBackground(.hidden)
             .listStyle(.insetGrouped)
