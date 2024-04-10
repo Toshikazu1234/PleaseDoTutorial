@@ -10,19 +10,19 @@ import SwiftUI
 struct HomeView: View {
     @State private var path = NavigationPath()
     @State private var todoItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10)
+        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low),
+        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .inProgress, priority: .medium),
+        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .todo, priority: .low)
     ]
     @State private var inProgressItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10)
+        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low),
+        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .inProgress, priority: .medium),
+        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .todo, priority: .low)
     ]
     @State private var doneItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10)
+        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low),
+        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .inProgress, priority: .medium),
+        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .todo, priority: .low)
     ]
     
     var body: some View {
