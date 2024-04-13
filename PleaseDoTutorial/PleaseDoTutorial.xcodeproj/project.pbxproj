@@ -97,6 +97,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500DBD402BCAF9690062E411 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				50414A072BC4DF4F00E500E7 /* HomeView.swift */,
+				50414A092BC4E95200E500E7 /* ListView.swift */,
+				500DBD2C2BC633BB0062E411 /* ListItemView.swift */,
+				500DBD322BC8BECB0062E411 /* NewItemView.swift */,
+				500DBD342BC8BF100062E411 /* ItemDetailsView.swift */,
+				500DBD382BCA00E60062E411 /* TitledTextField.swift */,
+				500DBD3A2BCA168E0062E411 /* StatusMenu.swift */,
+				500DBD3C2BCA19020062E411 /* PriorityMenu.swift */,
+				500DBD3E2BCAE63C0062E411 /* CTAButton.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		500DBD412BCAF9940062E411 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		504149CD2BC3610F00E500E7 = {
 			isa = PBXGroup;
 			children = (
@@ -166,15 +189,8 @@
 		50414A042BC4AD1700E500E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				50414A072BC4DF4F00E500E7 /* HomeView.swift */,
-				50414A092BC4E95200E500E7 /* ListView.swift */,
-				500DBD2C2BC633BB0062E411 /* ListItemView.swift */,
-				500DBD322BC8BECB0062E411 /* NewItemView.swift */,
-				500DBD342BC8BF100062E411 /* ItemDetailsView.swift */,
-				500DBD382BCA00E60062E411 /* TitledTextField.swift */,
-				500DBD3A2BCA168E0062E411 /* StatusMenu.swift */,
-				500DBD3C2BCA19020062E411 /* PriorityMenu.swift */,
-				500DBD3E2BCAE63C0062E411 /* CTAButton.swift */,
+				500DBD412BCAF9940062E411 /* Login */,
+				500DBD402BCAF9690062E411 /* Todo */,
 			);
 			path = Views;
 			sourceTree = "<group>";
