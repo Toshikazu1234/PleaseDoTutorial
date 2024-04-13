@@ -10,9 +10,10 @@ import SwiftUI
 struct NewItemView: View {
     @State private var text = ""
     @State private var description = ""
+    @State private var item = Item(id: "abc123", authorId: "q3cp49", title: "Test title", description: "Test description", startDate: .now, status: .todo, priority: .low)
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             TitledTextField(title: "Title", placeholder: "What do you need to do?", text: $text)
             
             Divider()
@@ -21,7 +22,11 @@ struct NewItemView: View {
             
             Divider()
             
+            StatusMenu(status: $item.status)
             
+            Divider()
+            
+            PriorityMenu(priority: $item.priority)
         }
     }
 }
