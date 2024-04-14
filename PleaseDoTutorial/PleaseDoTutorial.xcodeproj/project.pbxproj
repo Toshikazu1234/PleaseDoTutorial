@@ -23,6 +23,7 @@
 		500DBD492BCB6D1E0062E411 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD482BCB6D1E0062E411 /* EmailTextField.swift */; };
 		500DBD4B2BCB6F6F0062E411 /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD4A2BCB6F6F0062E411 /* PasswordField.swift */; };
 		500DBD4F2BCC41BE0062E411 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD4E2BCC41BE0062E411 /* LoginButton.swift */; };
+		500DBD512BCC54D80062E411 /* TogglePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD502BCC54D80062E411 /* TogglePromptView.swift */; };
 		504149DA2BC3610F00E500E7 /* PleaseDoTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149D92BC3610F00E500E7 /* PleaseDoTutorialApp.swift */; };
 		504149DC2BC3610F00E500E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149DB2BC3610F00E500E7 /* ContentView.swift */; };
 		504149DE2BC3611300E500E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504149DD2BC3611300E500E7 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		500DBD482BCB6D1E0062E411 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		500DBD4A2BCB6F6F0062E411 /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
 		500DBD4E2BCC41BE0062E411 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		500DBD502BCC54D80062E411 /* TogglePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePromptView.swift; sourceTree = "<group>"; };
 		504149D62BC3610F00E500E7 /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504149D92BC3610F00E500E7 /* PleaseDoTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialApp.swift; sourceTree = "<group>"; };
 		504149DB2BC3610F00E500E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				500DBD482BCB6D1E0062E411 /* EmailTextField.swift */,
 				500DBD4A2BCB6F6F0062E411 /* PasswordField.swift */,
 				500DBD4E2BCC41BE0062E411 /* LoginButton.swift */,
+				500DBD502BCC54D80062E411 /* TogglePromptView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				50414A0A2BC4E95200E500E7 /* ListView.swift in Sources */,
 				500DBD392BCA00E60062E411 /* TitledTextField.swift in Sources */,
 				500DBD3F2BCAE63C0062E411 /* CTAButton.swift in Sources */,
+				500DBD512BCC54D80062E411 /* TogglePromptView.swift in Sources */,
 				500DBD312BC7814C0062E411 /* NavPath.swift in Sources */,
 				500DBD372BC9F6050062E411 /* ListVM.swift in Sources */,
 				50414A082BC4DF4F00E500E7 /* HomeView.swift in Sources */,
