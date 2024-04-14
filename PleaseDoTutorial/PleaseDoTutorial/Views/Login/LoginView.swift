@@ -20,8 +20,17 @@ struct LoginView: View {
                 .fontWeight(.semibold)
                 .padding(.horizontal)
             
-            
             LoginFields()
+            
+            HStack {
+                Spacer()
+                
+                LoginButton(title: "Login") {
+                    print("Login button tapped")
+                }
+            }
+            .padding(.horizontal)
+            
             
             Spacer()
             
