@@ -19,6 +19,7 @@
 		500DBD3F2BCAE63C0062E411 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD3E2BCAE63C0062E411 /* CTAButton.swift */; };
 		500DBD432BCAFA590062E411 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD422BCAFA590062E411 /* LoginView.swift */; };
 		500DBD452BCAFCDC0062E411 /* LoginTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD442BCAFCDC0062E411 /* LoginTitleView.swift */; };
+		500DBD472BCB6C5D0062E411 /* LoginFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD462BCB6C5D0062E411 /* LoginFields.swift */; };
 		504149DA2BC3610F00E500E7 /* PleaseDoTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149D92BC3610F00E500E7 /* PleaseDoTutorialApp.swift */; };
 		504149DC2BC3610F00E500E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504149DB2BC3610F00E500E7 /* ContentView.swift */; };
 		504149DE2BC3611300E500E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504149DD2BC3611300E500E7 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		500DBD3E2BCAE63C0062E411 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		500DBD422BCAFA590062E411 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		500DBD442BCAFCDC0062E411 /* LoginTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTitleView.swift; sourceTree = "<group>"; };
+		500DBD462BCB6C5D0062E411 /* LoginFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFields.swift; sourceTree = "<group>"; };
 		504149D62BC3610F00E500E7 /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504149D92BC3610F00E500E7 /* PleaseDoTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialApp.swift; sourceTree = "<group>"; };
 		504149DB2BC3610F00E500E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				500DBD422BCAFA590062E411 /* LoginView.swift */,
 				500DBD442BCAFCDC0062E411 /* LoginTitleView.swift */,
+				500DBD462BCB6C5D0062E411 /* LoginFields.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				500DBD372BC9F6050062E411 /* ListVM.swift in Sources */,
 				50414A082BC4DF4F00E500E7 /* HomeView.swift in Sources */,
 				500DBD2D2BC633BB0062E411 /* ListItemView.swift in Sources */,
+				500DBD472BCB6C5D0062E411 /* LoginFields.swift in Sources */,
 				504149DC2BC3610F00E500E7 /* ContentView.swift in Sources */,
 				500DBD3D2BCA19020062E411 /* PriorityMenu.swift in Sources */,
 				504149DA2BC3610F00E500E7 /* PleaseDoTutorialApp.swift in Sources */,
