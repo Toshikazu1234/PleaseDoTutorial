@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var text = "Don't have an account?"
-    @State private var prompt = "Sign up here"
-    @State private var isLoggingIn = true
-    
+    @StateObject var vm = LoginVM()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -19,21 +16,21 @@ struct LoginView: View {
             
             LoginTitleView()
             
-            Text("Login")
+            Text(vm.titleText)
                 .font(.title)
                 .fontWeight(.semibold)
                 .padding(.horizontal)
             
-            if isLoggingIn {
-                LoginFields()
+            if vm.isLoggingIn {
+                LoginFields(email: $vm.email, pw: $vm.pw)
             } else {
-                SignUpFields()
+                SignUpFields(fname: $vm.fname, lname: $vm.lname, email: $vm.newEmail, pw: $vm.newPw)
             }
             
             HStack {
                 Spacer()
                 
-                LoginButton(title: "Login") {
+                LoginButton(title: vm.titleText) {
                     print("Login button tapped")
                 }
             }
@@ -41,7 +38,7 @@ struct LoginView: View {
             
             Spacer()
             
-            TogglePromptView(text: $text, prompt: $prompt, isLoggingIn: $isLoggingIn)
+            TogglePromptView(text: $vm.toggleText, prompt: $vm.prompt, isLoggingIn: $vm.isLoggingIn)
         }
         .padding()
     }
