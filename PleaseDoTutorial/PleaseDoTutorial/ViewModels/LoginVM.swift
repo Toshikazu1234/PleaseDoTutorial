@@ -40,4 +40,26 @@ final class LoginVM: ObservableObject {
     @Published var newPw = ""
     @Published var fname = ""
     @Published var lname = ""
+    
+    init() {
+        auth.delegate = self
+    }
+    
+    func didTapLoginButton() {
+        if isLoggingIn {
+            auth.signIn(email, pw)
+        } else {
+            auth.signUp(fname, lname, newEmail, newPw)
+        }
+    }
+    
+    func signOut() {
+        auth.signOut()
+    }
+}
+
+extension LoginVM: LoginManagerDelegate {
+    func authStateDidChange(isLoggedIn: Bool) {
+        loginStatus = isLoggedIn ? .loggedIn : .loggedOut
+    }
 }
