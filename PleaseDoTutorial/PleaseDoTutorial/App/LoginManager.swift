@@ -37,6 +37,20 @@ final class LoginManager {
                     "id": id
                 ])
                 print("Document successfully written!")
+                setupListener()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func signIn(_ email: String, _ pw: String) {
+        Task {
+            do {
+                let result = try await Auth.auth().signIn(withEmail: email, password: pw)
+                currentUser = result.user
+                print("Successfully signed in user!")
+                setupListener()
             } catch {
                 print(error)
             }
