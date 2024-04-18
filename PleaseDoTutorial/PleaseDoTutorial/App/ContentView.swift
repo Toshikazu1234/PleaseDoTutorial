@@ -15,6 +15,7 @@ struct ContentView: View {
         case .unknown:
             ProgressView()
                 .progressViewStyle(.circular)
+                .scaleEffect(2)
         case .loggedIn:
             HomeView()
         case .loggedOut:
