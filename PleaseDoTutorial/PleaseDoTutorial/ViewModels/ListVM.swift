@@ -25,5 +25,7 @@ final class ListVM: ObservableObject {
     ]
     @Published var unknown: [Item] = []
     
-    
+    func fetchItems() {
+        IM.shared.fetchItems()
+    }
 }
