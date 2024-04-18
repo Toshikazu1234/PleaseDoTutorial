@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50081BC12BD1B23200CC815C /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50081BC02BD1B23200CC815C /* ItemsManager.swift */; };
 		500DBD2D2BC633BB0062E411 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD2C2BC633BB0062E411 /* ListItemView.swift */; };
 		500DBD2F2BC777080062E411 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD2E2BC777080062E411 /* Extensions.swift */; };
 		500DBD312BC7814C0062E411 /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD302BC7814C0062E411 /* NavPath.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50081BC02BD1B23200CC815C /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		500DBD2C2BC633BB0062E411 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		500DBD2E2BC777080062E411 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		500DBD302BC7814C0062E411 /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				504149DB2BC3610F00E500E7 /* ContentView.swift */,
 				500DBD2E2BC777080062E411 /* Extensions.swift */,
 				50E7793F2BCEECA100DE7E81 /* LoginManager.swift */,
+				50081BC02BD1B23200CC815C /* ItemsManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50081BC12BD1B23200CC815C /* ItemsManager.swift in Sources */,
 				500DBD332BC8BECB0062E411 /* NewItemView.swift in Sources */,
 				500DBD3B2BCA168E0062E411 /* StatusMenu.swift in Sources */,
 				50414A0C2BC520AD00E500E7 /* Item.swift in Sources */,
