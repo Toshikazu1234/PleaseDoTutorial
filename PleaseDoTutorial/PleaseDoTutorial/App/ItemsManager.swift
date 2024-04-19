@@ -26,10 +26,10 @@ final class ItemsManager {
     
     private var isInitialFetch = true
     
-    private var allItems: [Status: [Item]] = [
-        .todo: [],
-        .inProgress: [],
-        .done: []
+    private var allItems: [Status: [String: Item]] = [
+        .todo: [:],
+        .inProgress: [:],
+        .done: [:]
     ]
     
     func fetchItems() {
@@ -48,7 +48,7 @@ final class ItemsManager {
                 switch diff.type {
                 case .added:
                     if isInitialFetch {
-                        allItems[item.status]?.append(item)
+                        allItems[item.status]?[item.id] = item
                     } else {
                         delegate?.didAddItem(item)
                     }
@@ -67,7 +67,7 @@ final class ItemsManager {
     private func sortBatchItems() {
         var sortedItems: [Status: [Item]] = [:]
         allItems.keys.forEach { status in
-            sortedItems[status] = allItems[status]?.sorted(by: {
+            sortedItems[status] = allItems[status]?.values.sorted(by: {
                 $0.startDate > $1.startDate
             })
         }
