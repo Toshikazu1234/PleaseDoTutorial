@@ -8,21 +8,9 @@
 import Foundation
 
 final class ListVM: ObservableObject {
-    @Published var todoItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .todo, priority: .medium),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .todo, priority: .low)
-    ]
-    @Published var inProgressItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .inProgress, priority: .low),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .inProgress, priority: .medium),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .inProgress, priority: .low)
-    ]
-    @Published var doneItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .done, priority: .low),
-        Item(id: "123abc", authorId: "John Doe", title: "Second item", description: "Second description", startDate: .now + 5, status: .done, priority: .medium),
-        Item(id: "789xyz", authorId: "John Doe", title: "Third item", description: "Third description", startDate: .now + 10, status: .done, priority: .low)
-    ]
+    @Published var todoItems: [Item] = []
+    @Published var inProgressItems: [Item] = []
+    @Published var doneItems: [Item] = []
     @Published var unknown: [Item] = []
     
     init() {
@@ -54,14 +42,14 @@ extension ListVM: ItemsManagerDelegate {
     }
     
     func didAddItem(_ item: Item) {
-        <#code#>
+        
     }
     
     func didUpdateItem(_ item: Item) {
-        <#code#>
+        
     }
     
     func didDeleteItem(_ item: Item) {
-        <#code#>
+        
     }
 }
