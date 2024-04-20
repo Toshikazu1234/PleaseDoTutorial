@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ItemDeetailsVM: ObservableObject {
+final class ItemDetailsVM: ObservableObject {
     
     
 }
