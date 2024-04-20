@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50081BC12BD1B23200CC815C /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50081BC02BD1B23200CC815C /* ItemsManager.swift */; };
+		50081BC32BD34EC200CC815C /* NewItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50081BC22BD34EC200CC815C /* NewItemVM.swift */; };
 		500DBD2D2BC633BB0062E411 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD2C2BC633BB0062E411 /* ListItemView.swift */; };
 		500DBD2F2BC777080062E411 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD2E2BC777080062E411 /* Extensions.swift */; };
 		500DBD312BC7814C0062E411 /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500DBD302BC7814C0062E411 /* NavPath.swift */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		50081BC02BD1B23200CC815C /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		50081BC22BD34EC200CC815C /* NewItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemVM.swift; sourceTree = "<group>"; };
 		500DBD2C2BC633BB0062E411 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		500DBD2E2BC777080062E411 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		500DBD302BC7814C0062E411 /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				500DBD302BC7814C0062E411 /* NavPath.swift */,
 				500DBD362BC9F6050062E411 /* ListVM.swift */,
 				500DBD562BCDE0020062E411 /* LoginVM.swift */,
+				50081BC22BD34EC200CC815C /* NewItemVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			files = (
 				50081BC12BD1B23200CC815C /* ItemsManager.swift in Sources */,
 				500DBD332BC8BECB0062E411 /* NewItemView.swift in Sources */,
+				50081BC32BD34EC200CC815C /* NewItemVM.swift in Sources */,
 				500DBD3B2BCA168E0062E411 /* StatusMenu.swift in Sources */,
 				50414A0C2BC520AD00E500E7 /* Item.swift in Sources */,
 				50414A0A2BC4E95200E500E7 /* ListView.swift in Sources */,
