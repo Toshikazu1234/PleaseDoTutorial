@@ -37,7 +37,7 @@ struct LoginFields: View {
                     case .pw:
                         pw = ""
                     }
-                    isKeyboardFocused = nil
+                    self.isKeyboardFocused = nil
                 }
                 
                 Button("Done") {
