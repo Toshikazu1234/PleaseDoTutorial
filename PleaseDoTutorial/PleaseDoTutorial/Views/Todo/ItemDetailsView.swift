@@ -32,7 +32,19 @@ struct ItemDetailsView: View {
             
             if vm.initialItem.isDifferent(comparedTo: vm.updatedItem) {
                 CTAButton(title: "Confirm") {
-                    print("CTAButton tapped")
+                    vm.updateItem()
+                }
+                .alert("Alert", isPresented: $vm.updateItemError) {
+                    Button("Dismiss", role: .cancel) {}
+                } message: {
+                    Text("Error updating item.")
+                }
+                .alert("Success!", isPresented: $vm.didUpdateItem) {
+                    Button("Dismiss", role: .cancel) {
+                        path.removeLast()
+                    }
+                } message: {
+                    Text("Item updated successfully.")
                 }
             }
         }
