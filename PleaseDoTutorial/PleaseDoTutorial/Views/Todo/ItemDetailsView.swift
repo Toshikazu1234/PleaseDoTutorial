@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItemDetailsView: View {
     let item: Item
+    @Binding var path: [NavPath]
     @StateObject private var vm = ItemDetailsVM()
     
     var body: some View {
@@ -45,5 +46,5 @@ struct ItemDetailsView: View {
 }
 
 #Preview {
-    ItemDetailsView(item: Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low))
+    ItemDetailsView(item: Item(id: "abc123", authorId: "John Doe", title: "First item", description: "First description", startDate: .now, status: .todo, priority: .low), path: .constant([]))
 }
